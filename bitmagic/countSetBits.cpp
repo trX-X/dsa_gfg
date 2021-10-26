@@ -47,6 +47,6 @@ int countSetBits(int n){
 
 
 int main(void){
-    cout<<countSetBits(13);
+    cout<<countSetBits(17);
     return 0;
 }

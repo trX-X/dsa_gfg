@@ -13,15 +13,15 @@ void kthBitRShift(int n, int k){
 
 //Left shift
 void kthBitLShift(int n, int k){
-    if((n & (1 << (k-1))) != 0)
+    if(((n) & (1 << (k))) != 0)
         cout<<"Yes"<<endl;
     else 
         cout<<"No"<<endl;
 }
 
 int main(void){
-    kthBitRShift(5,3);
-    kthBitLShift(5,3);
+    kthBitRShift(4,2);
+    kthBitLShift(4,2);
 
     return 0;
 }
