@@ -18,5 +18,6 @@ void powerSet(string str){
 
 int main(void){
     powerSet("abc");
+    powerSet("abcd");
     return 0;
 }
