@@ -3,7 +3,7 @@ using namespace std;
 
 int main(void){
     //Signed not
-    int x = 1;
+    int x = 12;
     cout<<(~x)<<endl;   //-2
     x = 5;
     cout<<(~x)<<endl;   //-6

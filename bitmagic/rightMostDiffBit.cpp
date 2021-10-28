@@ -1,14 +1,13 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 
 int posOfRightMostDiffBit(int m, int n)
 {
+    if(m == n) return -1;
     int XOR = m ^ n;
-    for(int k=1; k<=XOR; k++){
-        if((XOR& (1 << (k-1))) != 0)
-            return k;
-    }
-    return -1;
+    return log2(XOR & ~(XOR-1)) + 1;
+
 }
 
 
