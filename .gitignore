@@ -3,3 +3,7 @@
 *.vscode
 bitmagic/sparseNum
 bitmagic/countSetBitstoN
+recursion/palindromeRec
+recursion/powerSetRec
+.gitignore
+recursion/wordsPhoneDig
