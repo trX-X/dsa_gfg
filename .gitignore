@@ -7,3 +7,6 @@ recursion/palindromeRec
 recursion/powerSetRec
 .gitignore
 recursion/wordsPhoneDig
+arrays/mvZerosEnd
+arrays/leftRotateArr
+arrays/leftRotateD
