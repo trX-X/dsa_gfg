@@ -16,22 +16,36 @@ using namespace std;
 // }
 
 //Efficient solution
-bool equilibriumPoint(int arr[], int n){
+// bool equilibriumPoint(int arr[], int n){
+//     int sum=0;
+//     for(int i=0; i<n; i++)
+//         sum += arr[i];
+//     int l_sum=0;
+//     for(int i=0; i<n; i++){
+//         if(l_sum == sum - arr[i])
+//             return true;
+//         l_sum += arr[i];
+//         sum -= arr[i];    
+//     }    
+//     return false;
+// }
+
+int equilibriumPoint(long long a[], int n) {
     int sum=0;
     for(int i=0; i<n; i++)
-        sum += arr[i];
-    int l_sum=0;
+        sum += a[i];
+    int l_sum = 0;
     for(int i=0; i<n; i++){
-        if(l_sum == sum - arr[i])
-            return true;
-        l_sum += arr[i];
-        sum -= arr[i];    
-    }    
-    return false;
+        if(l_sum == sum - (l_sum+a[i])){
+            return i+1;
+        }
+        l_sum += a[i];
+    }   
+    return -1;  
 }
 
 int main(void){
-    int arr[] = {3, 4, 8, -9, 20, 6};
-    cout<< equilibriumPoint(arr, 6);
+    long long arr[] = {1,3,5,2,2};
+    cout<< equilibriumPoint(arr, 5);
     return 0;
 }
