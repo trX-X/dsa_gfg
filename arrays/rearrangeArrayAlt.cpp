@@ -48,40 +48,40 @@ using namespace std;
 //         cout<<arr[i]<<" ";
 // }
 
-// void rearrange(long long *arr, int n){
-//   int max_idx = n - 1, min_idx = 0;
+void rearrange(long long *arr, int n){
+  int max_idx = n - 1, min_idx = 0;
 
-// 	// store maximum element of array
-// 	int max_elem = arr[n - 1] + 1;
+	// store maximum element of array
+	int max_elem = arr[n - 1] + 1;
 
-// 	// traverse array elements
-// 	for (int i = 0; i < n; i++) {
-// 		// at even index : we have to put maximum element
-// 		if (i % 2 == 0) {
-// 			arr[i] += (arr[max_idx] % max_elem) * max_elem;
-// 			max_idx--;
-// 		}
+	// traverse array elements
+	for (int i = 0; i < n; i++) {
+		// at even index : we have to put maximum element
+		if (i % 2 == 0) {
+			arr[i] += (arr[max_idx] % max_elem) * max_elem;
+			max_idx--;
+		}
 
-// 		// at odd index : we have to put minimum element
-// 		else {
-// 			arr[i] += (arr[min_idx] % max_elem) * max_elem;
-// 			min_idx++;
-// 		}
-// 	}
+		// at odd index : we have to put minimum element
+		else {
+			arr[i] += (arr[min_idx] % max_elem) * max_elem;
+			min_idx++;
+		}
+	}
 
-// 	// array elements back to it's original form
-// 	for (int i = 0; i < n; i++)
-// 		arr[i] = arr[i] / max_elem;
-//     for (int i = 0; i < n; i++)
-//       cout<<arr[i]<<" ";
+	// array elements back to it's original form
+	for (int i = 0; i < n; i++)
+		arr[i] = arr[i] / max_elem;
+    for (int i = 0; i < n; i++)
+      cout<<arr[i]<<" ";
 
 
 
-// }
+}
 
 
 int main(void){
-    long long arr[] = {4,0,2,1,3};
+    long long arr[] = {1,2, 3, 4, 5};
     rearrange(arr, 5);
     
     return 0;

@@ -37,7 +37,7 @@ int getWater(int arr[], int n){
 }
 
 int main(void){
-    int arr[] = {3, 0, 1, 2, 5};
-    cout<<getWater(arr, 5);
+    int arr[] = {7, 4, 0, 9};
+    cout<<getWater(arr, 4);
     return 0;
 }
