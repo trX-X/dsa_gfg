@@ -43,7 +43,7 @@ bool checkRotatedAndSorted(int arr[], int num){
     }
 
 int main(void){
-    int arr[] = {3,4,1,2};
-    cout<<checkRotatedAndSorted(arr, 4);
+    int arr[] = {3,4,5,1,2};
+    cout<<checkRotatedAndSorted(arr, 5);
     return 0;
 }    
