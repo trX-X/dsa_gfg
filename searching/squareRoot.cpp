@@ -11,11 +11,11 @@ using namespace std;
 // }
 
 //Efficient solution O(logx)
-int sqrtFloor(int x){
-    int low=1, high=x, ans=1;
+long long int sqrtFloor(long long int x){
+    long long int low=1, high=x, ans=1;
     while(low <= high){
-        int mid = (low+high)/2;
-        int msq = mid*mid;
+        long long int mid = (low+high)/2;
+        long long int msq = mid*mid;
         if(msq == x)
             return mid;
         else if(msq > x)
@@ -29,6 +29,6 @@ int sqrtFloor(int x){
 }
 
 int main(void){
-    cout<<sqrtFloor(15);
+    cout<<sqrtFloor(6179767);
     return 0;
 }
